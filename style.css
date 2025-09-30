@@ -1,0 +1,55 @@
+/* Corpo pagina */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar personalizzata */
+.custom-navbar {
+  background-color: #003366; /* blu scuro */
+}
+
+/* Link e brand della navbar */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: white !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover rosso sui link */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+  color: red !important;
+}
+
+/* Link attivo giallo */
+.custom-navbar .nav-link.active {
+  color: red !important;
+  font-weight: bold;
+}
+
+/* Tabelle */
+table {
+  background-color: white;
+}
+
+/* Stile per la riga dei marcatori */
+.riga-marcatori td {
+  background-color: white;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+#tabella-calendario tr:not(.table-primary) td {
+  border-bottom: none;
+}
+
+#tabella-calendario td {
+  vertical-align: middle;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
