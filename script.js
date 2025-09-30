@@ -3,53 +3,65 @@ const giornate = [
   {
     giornata: 1,
     partite: [
-      { data: "Martedì 30/09  Ore 20.30", squadra1: "SGM", gol1: "", squadra2: "PSG2", gol2: "" }
+      { data: "Martedì 30/09  Ore 20.30", squadra1: "SGM", gol1: "3", squadra2: "PSG2", gol2: "0" ,  
+        punti: ["25-16", "25-19", "25-22"]}
     ],
   },
   {
     giornata: 2,
     partite: [
-      { data: "Mercoledì 1/10  Ore 18.30", squadra1: "Chuchos", gol1: "", squadra2: "Le Pannocchiette", gol2: "" },
-      { data: "Mercoledì 1/10  Ore 20.00", squadra1: "Sfavoriti", gol1: "", squadra2: "Chicchi di mais", gol2: "" }
+      { data: "Mercoledì 1/10  Ore 18.30", squadra1: "Chuchos", gol1: "", squadra2: "Le Pannocchiette", gol2: "",
+        punti []},
+      { data: "Mercoledì 1/10  Ore 20.00", squadra1: "Sfavoriti", gol1: "", squadra2: "Chicchi di mais", gol2: "",
+        punti []}
     ],
   },
   {
     giornata: 3,
     partite: [
-      { data: "Giovedì 2/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Fireball", gol2: "" }
+      { data: "Giovedì 2/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Fireball", gol2: "",
+        punti []}
     ],
   },
   {
     giornata: 4,
     partite: [
-      { data: "Venerdì 3/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "PSG2", gol2: "" },
-      { data: "Venerdì 3/10  Ore 20.00", squadra1: "Le Pannocchiette", gol1: "", squadra2: "Fireball", gol2: "" }
+      { data: "Venerdì 3/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "PSG2", gol2: "" ,
+        punti []},
+      { data: "Venerdì 3/10  Ore 20.00", squadra1: "Le Pannocchiette", gol1: "", squadra2: "Fireball", gol2: "",
+        punti []}
     ],
   },
   {
     giornata: 5,
     partite: [
-      { data: "Lunedi 6/10  Ore 20.00", squadra1: "Gli sfavoriti", gol1: "", squadra2: "PSG2", gol2: "" }
+      { data: "Lunedi 6/10  Ore 20.00", squadra1: "Gli sfavoriti", gol1: "", squadra2: "PSG2", gol2: "",
+        punti []}
     ],
   },
   {
     giornata: 6,
     partite: [
-      { data: "Martedì 7/10  Ore 20.00", squadra1: "Chuchos", gol1: "", squadra2: "CIRO", gol2: "" }
+      { data: "Martedì 7/10  Ore 20.00", squadra1: "Chuchos", gol1: "", squadra2: "CIRO", gol2: "",
+        punti []}
     ],
   },
   {
     giornata: 7,
     partite: [
-      { data: "Mercoledì 8/10  Ore 18.30", squadra1: "Fireball", gol1: "", squadra2: "Chuchos", gol2: "" },
-      { data: "Mercoledì 8/10  Ore 20.00", squadra1: "Gli Sfavoriti", gol1: "", squadra2: "SGM", gol2: "" }
+      { data: "Mercoledì 8/10  Ore 18.30", squadra1: "Fireball", gol1: "", squadra2: "Chuchos", gol2: "",
+        punti []},
+      { data: "Mercoledì 8/10  Ore 20.00", squadra1: "Gli Sfavoriti", gol1: "", squadra2: "SGM", gol2: "",
+        punti []}
     ],
   },
   {
     giornata: 8,
     partite: [
-      { data: "Giovedì 9/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "SGM", gol2: "" },
-      { data: "Giovedì 9/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Le Pannocchiette", gol2: "" }
+      { data: "Giovedì 9/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "SGM", gol2: "",
+        punti []},
+      { data: "Giovedì 9/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Le Pannocchiette", gol2: "",
+        punti []}
     ],
   }
 ];
@@ -77,6 +89,19 @@ giornate.forEach(giornata => {
       <td class="text-start">${p.squadra2}</td>
     `;
     calendarioBody.appendChild(tr);
+
+        // Riga marcatori
+    const trMarcatori = document.createElement("tr");
+    trMarcatori.classList.add("riga-marcatori");
+    trMarcatori.innerHTML = `
+      <td></td>
+      <td></td>
+      <td style="text-align: center;">${p.punti.length > 0 ? p.punti.join(", ") : "-"}</td>
+      <td></td>
+    `;
+    calendarioBody.appendChild(trMarcatori);
+  });
+    
   });
 });
 
@@ -131,3 +156,4 @@ classificaB.forEach(c => {
   classificaBodyB.appendChild(tr);
 
 });
+
