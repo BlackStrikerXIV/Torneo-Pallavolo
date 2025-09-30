@@ -10,7 +10,7 @@ const giornate = [
     giornata: 2,
     partite: [
       { data: "Mercoledì 1/10  Ore 18.30", squadra1: "Chuchos", gol1: "", squadra2: "Le Pannocchiette", gol2: "" },
-      { data: "Giovedì 2/10  Ore 20.30", squadra1: "Sfavoriti", gol1: "", squadra2: "Chicchi di mais", gol2: "" }
+      { data: "Mercoledì 1/10  Ore 20.00", squadra1: "Sfavoriti", gol1: "", squadra2: "Chicchi di mais", gol2: "" }
     ],
   },
   {
@@ -129,4 +129,5 @@ classificaB.forEach(c => {
     <td>${c.ds}</td>
   `;
   classificaBodyB.appendChild(tr);
+
 });
