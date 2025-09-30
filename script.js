@@ -91,17 +91,15 @@ giornate.forEach(giornata => {
     calendarioBody.appendChild(tr);
 
         // Riga marcatori
-    const trMarcatori = document.createElement("tr");
-    trMarcatori.classList.add("riga-marcatori");
-    trMarcatori.innerHTML = `
+    const trPunti = document.createElement("tr");
+    trPunti.classList.add("riga-punti");
+    trPunti.innerHTML = `
       <td></td>
       <td></td>
       <td style="text-align: center;">${p.punti.length > 0 ? p.punti.join(", ") : "-"}</td>
       <td></td>
     `;
-    calendarioBody.appendChild(trMarcatori);
-  });
-    
+    calendarioBody.appendChild(trPunti);   
   });
 });
 
@@ -114,9 +112,9 @@ const classificaA = [
 ];
 
 const classificaB = [
-  { squadra: "PSG2", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
+  { squadra: "SGM", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
+  { squadra: "PSG2", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 },
   { squadra: "Chicchi di mais", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
-  { squadra: "SGM", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
   { squadra: "Gli sfavoriti", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 }
 ];
 
@@ -156,5 +154,4 @@ classificaB.forEach(c => {
   classificaBodyB.appendChild(tr);
 
 });
-
 
