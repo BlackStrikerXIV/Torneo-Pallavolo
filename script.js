@@ -23,7 +23,7 @@ const giornate = [
     giornata: 4,
     partite: [
       { data: "Venerdì 3/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "PSG2", gol2: "" },
-      { data: "Venerdì 3/10  Ore 20.00", squadra1: "Pannocchiette", gol1: "", squadra2: "Fireball", gol2: "" }
+      { data: "Venerdì 3/10  Ore 20.00", squadra1: "Le Pannocchiette", gol1: "", squadra2: "Fireball", gol2: "" }
     ],
   },
   {
@@ -49,7 +49,7 @@ const giornate = [
     giornata: 8,
     partite: [
       { data: "Giovedì 9/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "SGM", gol2: "" },
-      { data: "Giovedì 9/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Pannocchiette", gol2: "" }
+      { data: "Giovedì 9/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Le Pannocchiette", gol2: "" }
     ],
   }
 ];
