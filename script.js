@@ -11,57 +11,57 @@ const giornate = [
     giornata: 2,
     partite: [
       { data: "Mercoledì 1/10  Ore 18.30", squadra1: "Chuchos", gol1: "", squadra2: "Le Pannocchiette", gol2: "",
-        punti []},
+        punti: []},
       { data: "Mercoledì 1/10  Ore 20.00", squadra1: "Sfavoriti", gol1: "", squadra2: "Chicchi di mais", gol2: "",
-        punti []}
+        punti: []}
     ],
   },
   {
     giornata: 3,
     partite: [
       { data: "Giovedì 2/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Fireball", gol2: "",
-        punti []}
+        punti: []}
     ],
   },
   {
     giornata: 4,
     partite: [
       { data: "Venerdì 3/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "PSG2", gol2: "" ,
-        punti []},
+        punti: []},
       { data: "Venerdì 3/10  Ore 20.00", squadra1: "Le Pannocchiette", gol1: "", squadra2: "Fireball", gol2: "",
-        punti []}
+        punti: []}
     ],
   },
   {
     giornata: 5,
     partite: [
       { data: "Lunedi 6/10  Ore 20.00", squadra1: "Gli sfavoriti", gol1: "", squadra2: "PSG2", gol2: "",
-        punti []}
+        punti: []}
     ],
   },
   {
     giornata: 6,
     partite: [
       { data: "Martedì 7/10  Ore 20.00", squadra1: "Chuchos", gol1: "", squadra2: "CIRO", gol2: "",
-        punti []}
+        punti: []}
     ],
   },
   {
     giornata: 7,
     partite: [
       { data: "Mercoledì 8/10  Ore 18.30", squadra1: "Fireball", gol1: "", squadra2: "Chuchos", gol2: "",
-        punti []},
+        punti: []},
       { data: "Mercoledì 8/10  Ore 20.00", squadra1: "Gli Sfavoriti", gol1: "", squadra2: "SGM", gol2: "",
-        punti []}
+        punti: []}
     ],
   },
   {
     giornata: 8,
     partite: [
       { data: "Giovedì 9/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "SGM", gol2: "",
-        punti []},
+        punti: []},
       { data: "Giovedì 9/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Le Pannocchiette", gol2: "",
-        punti []}
+        punti: []}
     ],
   }
 ];
@@ -156,4 +156,5 @@ classificaB.forEach(c => {
   classificaBodyB.appendChild(tr);
 
 });
+
 
