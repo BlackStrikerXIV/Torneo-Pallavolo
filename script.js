@@ -19,8 +19,8 @@ const giornate = [
   {
     giornata: 3,
     partite: [
-      { data: "Giovedì 2/10  Ore 20.00", squadra1: "CIRO", gol1: "", squadra2: "Fireball", gol2: "",
-        punti: []}
+      { data: "Giovedì 2/10  Ore 20.00", squadra1: "Fireball", gol1: "", squadra2: "CIRO", gol2: "",
+        punti: ["25-13", "25-18", "17-25"]}
     ],
   },
   {
@@ -106,9 +106,9 @@ giornate.forEach(giornata => {
 // --- CLASSIFICA ---
 const classificaA = [
   { squadra: "Chuchos", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
-  { squadra: "Pannocchiette", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 },
-  { squadra: "CIRO", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
-  { squadra: "Fireball", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 }
+  { squadra: "Fireball", punti: 3, g: 1, v: 1, p: 0, sv: 2, sp: 1, ds: 1 },
+  { squadra: "CIRO", punti: 0, g: 1, v: 0, p: 1, sv: 1, sp: 2, ds: -1 },
+  { squadra: "Pannocchiette", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 }
 ];
 
 const classificaB = [
