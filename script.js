@@ -19,7 +19,7 @@ const giornate = [
   {
     giornata: 3,
     partite: [
-      { data: "Giovedì 2/10  Ore 20.00", squadra1: "Fireball", gol1: "", squadra2: "CIRO", gol2: "",
+      { data: "Giovedì 2/10  Ore 20.00", squadra1: "Fireball", gol1: "2", squadra2: "CIRO", gol2: "1",
         punti: ["25-13", "25-18", "17-25"]}
     ],
   },
