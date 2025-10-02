@@ -10,10 +10,10 @@ const giornate = [
   {
     giornata: 2,
     partite: [
-      { data: "Mercoledì 1/10  Ore 18.30", squadra1: "Chuchos", gol1: "", squadra2: "Le Pannocchiette", gol2: "",
-        punti: []},
-      { data: "Mercoledì 1/10  Ore 20.00", squadra1: "Sfavoriti", gol1: "", squadra2: "Chicchi di mais", gol2: "",
-        punti: []}
+      { data: "Mercoledì 1/10  Ore 18.30", squadra1: "Le Pannocchiette", gol1: "0", squadra2: "Chuchos", gol2: "3",
+        punti: ["21-25", "25-27", "26-28"]},
+      { data: "Mercoledì 1/10  Ore 20.00", squadra1: "Sfavoriti", gol1: "3", squadra2: "Chicchi di mais", gol2: "0",
+        punti: ["25-14", "25-20", "25-20"]}
     ],
   },
   {
@@ -105,17 +105,17 @@ giornate.forEach(giornata => {
 
 // --- CLASSIFICA ---
 const classificaA = [
-  { squadra: "Chuchos", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
+  { squadra: "Chuchos", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
+  { squadra: "Pannocchiette", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 },
   { squadra: "CIRO", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
-  { squadra: "Pannocchiette", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
   { squadra: "Fireball", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 }
 ];
 
 const classificaB = [
   { squadra: "SGM", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
+  { squadra: "Gli sfavoriti", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
   { squadra: "PSG2", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 },
-  { squadra: "Chicchi di mais", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 },
-  { squadra: "Gli sfavoriti", punti: 0, g: 0, v: 0, p: 0, sv: 0, sp: 0, ds: 0 }
+  { squadra: "Chicchi di mais", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 }  
 ];
 
 // Popola Girone A
