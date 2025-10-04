@@ -26,10 +26,10 @@ const giornate = [
   {
     giornata: 4,
     partite: [
-      { data: "Venerdì 3/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "", squadra2: "PSG2", gol2: "" ,
-        punti: []},
-      { data: "Venerdì 3/10  Ore 20.00", squadra1: "Le Pannocchiette", gol1: "", squadra2: "Fireball", gol2: "",
-        punti: []}
+      { data: "Venerdì 3/10  Ore 18.30", squadra1: "Chicchi di Mais", gol1: "2", squadra2: "PSG2", gol2: "1" ,
+        punti: ["29-31", "29-27", "25-21"]},
+      { data: "Venerdì 3/10  Ore 20.00", squadra1: "Le Pannocchiette", gol1: "1", squadra2: "Fireball", gol2: "2",
+        punti: ["21-25", "25-21", "20-25"]}
     ],
   },
   {
@@ -105,17 +105,18 @@ giornate.forEach(giornata => {
 
 // --- CLASSIFICA ---
 const classificaA = [
+  { squadra: "Fireball", punti: 5, g: 2, v: 2, p: 0, sv: 4, sp: 2, ds: 2 },
   { squadra: "Chuchos", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
-  { squadra: "Fireball", punti: 3, g: 1, v: 1, p: 0, sv: 2, sp: 1, ds: 1 },
-  { squadra: "CIRO", punti: 0, g: 1, v: 0, p: 1, sv: 1, sp: 2, ds: -1 },
-  { squadra: "Pannocchiette", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 }
+  { squadra: "Pannocchiette", punti: 1, g: 2, v: 0, p: 2, sv: 1, sp: 5, ds: -4 },
+  { squadra: "CIRO", punti: 0, g: 1, v: 0, p: 1, sv: 1, sp: 2, ds: -1 }
 ];
 
 const classificaB = [
   { squadra: "SGM", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
   { squadra: "Gli sfavoriti", punti: 3, g: 1, v: 1, p: 0, sv: 3, sp: 0, ds: 3 },
-  { squadra: "PSG2", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 },
-  { squadra: "Chicchi di mais", punti: 0, g: 1, v: 0, p: 1, sv: 0, sp: 3, ds: -3 }  
+  { squadra: "Chicchi di mais", punti: 2, g: 2, v: 1, p: 1, sv: 2, sp: 4, ds: -2 },
+  { squadra: "PSG2", punti: 1, g: 2, v: 0, p: 2, sv: 1, sp: 5, ds: -4 }
+    
 ];
 
 // Popola Girone A
